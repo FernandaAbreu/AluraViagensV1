@@ -13,6 +13,10 @@
 		BA78EA42291089190073C166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA78EA40291089190073C166 /* Main.storyboard */; };
 		BA78EA442910891D0073C166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA78EA432910891D0073C166 /* Assets.xcassets */; };
 		BA78EA472910891D0073C166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA78EA452910891D0073C166 /* LaunchScreen.storyboard */; };
+		BA78EA4F291493650073C166 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78EA4E291493650073C166 /* Viagem.swift */; };
+		BA78EA532914960B0073C166 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = BA78EA522914960B0073C166 /* Assets */; };
+		BA78EA572914999E0073C166 /* tableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78EA562914999E0073C166 /* tableViewCell.swift */; };
+		BA78EA6029169FCF0073C166 /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78EA5F29169FCF0073C166 /* ViagemDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		BA78EA432910891D0073C166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA78EA462910891D0073C166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA78EA482910891D0073C166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA78EA4E291493650073C166 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		BA78EA522914960B0073C166 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = "../../../../../Downloads/Arquivos Projeto/Assets"; sourceTree = "<group>"; };
+		BA78EA562914999E0073C166 /* tableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewCell.swift; sourceTree = "<group>"; };
+		BA78EA5F29169FCF0073C166 /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViagemDAO.swift; path = "../../../../../../Downloads/Arquivos Projeto 2/ViagemDAO.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		BA78EA39291089190073C166 /* Alura Viagens */ = {
 			isa = PBXGroup;
 			children = (
+				BA78EA5C29169B190073C166 /* DAO */,
+				BA78EA582915EA6D0073C166 /* Model */,
 				BA78EA3A291089190073C166 /* AppDelegate.swift */,
+				BA78EA5929169AC40073C166 /* Home */,
 				BA78EA3C291089190073C166 /* SceneDelegate.swift */,
-				BA78EA3E291089190073C166 /* ViewController.swift */,
 				BA78EA40291089190073C166 /* Main.storyboard */,
 				BA78EA432910891D0073C166 /* Assets.xcassets */,
+				BA78EA522914960B0073C166 /* Assets */,
 				BA78EA452910891D0073C166 /* LaunchScreen.storyboard */,
 				BA78EA482910891D0073C166 /* Info.plist */,
 			);
 			path = "Alura Viagens";
+			sourceTree = "<group>";
+		};
+		BA78EA582915EA6D0073C166 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA78EA4E291493650073C166 /* Viagem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA78EA5929169AC40073C166 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA78EA5B29169B030073C166 /* View */,
+				BA78EA5A29169AF50073C166 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BA78EA5A29169AF50073C166 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA78EA3E291089190073C166 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA78EA5B29169B030073C166 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA78EA562914999E0073C166 /* tableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA78EA5C29169B190073C166 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				BA78EA5F29169FCF0073C166 /* ViagemDAO.swift */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA78EA472910891D0073C166 /* LaunchScreen.storyboard in Resources */,
+				BA78EA532914960B0073C166 /* Assets in Resources */,
 				BA78EA442910891D0073C166 /* Assets.xcassets in Resources */,
 				BA78EA42291089190073C166 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA78EA4F291493650073C166 /* Viagem.swift in Sources */,
 				BA78EA3F291089190073C166 /* ViewController.swift in Sources */,
 				BA78EA3B291089190073C166 /* AppDelegate.swift in Sources */,
+				BA78EA6029169FCF0073C166 /* ViagemDAO.swift in Sources */,
 				BA78EA3D291089190073C166 /* SceneDelegate.swift in Sources */,
+				BA78EA572914999E0073C166 /* tableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
